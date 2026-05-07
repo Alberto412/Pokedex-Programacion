@@ -18,7 +18,7 @@ public class Entrenador {
     private String nombre;
     private int edad;
 
-    @OneToOne(cascade = CascadeType.ALL)
+    @OneToOne
     @JoinColumn(name = "equipo_id", referencedColumnName = "id")
     private Equipo equipo;
 }
